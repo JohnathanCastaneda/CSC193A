@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		<!-- Your UI controls go here -->
+		<!-- A field for users to enter large (multi-line) amounts of text (4 rows by 30 columns)-->
+		 <!-- wrap it in a bordered filed set box with label "Text" -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="textInput" placeholder="Input text here..." rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<!-- second bordered field set box labeled "Fancify"-->
+		 <!-- Butt labeled "Bigger" and 2 radio buttons labeled "FancyShmancy" and "BoringBetty"-->
+		  <!-- Moo button that adds a "-Moo." suffix to each sentence -->
+		<fieldset>
+			<legend>Fancify</legend>
+				
+			<button onclick="showHelloMessage()">Bigger!</button>
+			<br>
+				
+			<input type="radio" id="fancy" name="fancifyOption" value="fancy" onchange="toggleStyle()">
+			<label for="fancy">FancyShmancy</label>
+			<br>
+				
+			<input type="radio" id="boring" name="fancifyOption" value="boring" onchange="toggleStyle()">
+			<label for="boring">BoringBetty</label>
+			<br>
+
+			<button onclick="toggleMoo()">Moo</button>
+		</fieldset>
+	</body>
+</html>
